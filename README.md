@@ -10,7 +10,10 @@
 
 
 # ShareTodo
-Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 프로젝트 입니다. (Last Update: 2023.08.07)
+Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 1인 프로젝트 입니다. (Last Update: 2023.08.07)
+- Design - Carki
+- Client - Carki
+- Server - Carki
 
 # API
 ### Host 
