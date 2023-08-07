@@ -40,8 +40,11 @@ RequestModel
 ResponseModel
 ```JSON
 {
-   "userID": String,
-   "nickName": String
+   "message": String,
+   "data": {
+      "userID": String,
+      "nickName": String
+   }
 }
 ```
 https://github.com/ios-carki/ShareTodo/assets/44957712/dd7f2325-d299-435f-9609-68d8e0bf12ee
