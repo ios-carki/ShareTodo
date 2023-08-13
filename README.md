@@ -10,40 +10,77 @@
 
 
 # ShareTodo
-Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 1인 프로젝트 입니다. (Last Update: 2023.08.07)
+Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 1인 프로젝트 입니다. (Last Update: 2023.08.13)
 - Design - Carki
 - Client - Carki
 - Server - Carki
 
-# API
-### Host 
+# Index
+
+- Version
+  - iOS 15.0+
+- [BackEnd](#backend)
+  - [Authentication API](#authentication-api)
+    - [Register API](#register-api)
+    - [Login API](#login-api)
+
+# BackEnd
+### Server 
 - Local (Until Internal Test Period)
 ### DB 
 - Postgres
 ### DB GUI
 - Beekeeper Studio
 
-# Run
-### RegisterAPI Test
-- RegisterAPI Model
+---
+
+# Authentication API
+- Register API
+- Login API
+
+## Register API
   
-RequestModel
+##### RequestModel
 ```JSON
 {
    "ID": UUID,
    "userID": String,
    "password": String,
-   "nickName": String
+   "nickName": String?
 }
 ```
 
-ResponseModel
+##### ResponseModel
 ```JSON
 {
    "message": String,
    "data": {
       "userID": String,
-      "nickName": String
+      "nickName": String?
+   }
+}
+```
+---
+
+## Login API
+
+##### RequestModel
+```JSON
+{
+   "userID": String,
+   "password": String,
+}
+```
+
+##### ResponseModel
+```JSON
+{
+   "message": String,
+   "data": {
+      "id": UUID,
+      "nickName": String,
+      "userId": String,
+      "token": String
    }
 }
 ```
