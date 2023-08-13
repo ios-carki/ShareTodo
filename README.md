@@ -15,19 +15,32 @@ Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 1인 프로젝트 입니�
 - Client - Carki
 - Server - Carki
 
-# API
-### Host 
+# Index
+
+- Version
+  - iOS 15.0+
+- [BackEnd](#backend)
+  - [Authentication API](#authentication-api)
+    - [Register API](#register-api)
+    - [Login API](#login-api)
+
+# BackEnd
+### Server 
 - Local (Until Internal Test Period)
 ### DB 
 - Postgres
 ### DB GUI
 - Beekeeper Studio
 
-# Run
-### AuthenticationAPI
-- RegisterAPI Model
+---
+
+# Authentication API
+- Register API
+- Login API
+
+## Register API
   
-RequestModel
+##### RequestModel
 ```JSON
 {
    "ID": UUID,
@@ -37,7 +50,7 @@ RequestModel
 }
 ```
 
-ResponseModel
+##### ResponseModel
 ```JSON
 {
    "message": String,
@@ -49,9 +62,9 @@ ResponseModel
 ```
 ---
 
-- LoginAPI Model
+## Login API
 
-RequestModel
+##### RequestModel
 ```JSON
 {
    "userID": String,
@@ -59,7 +72,7 @@ RequestModel
 }
 ```
 
-ResponseModel
+##### ResponseModel
 ```JSON
 {
    "message": String,
