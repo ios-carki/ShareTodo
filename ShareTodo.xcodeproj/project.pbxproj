@@ -37,6 +37,10 @@
 		C3DFD6192A7FD30500721117 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD5E22A7FD30500721117 /* EndPoints.swift */; };
 		C3DFD61C2A7FD39700721117 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3DFD61B2A7FD39700721117 /* Alamofire */; };
 		C3DFD61E2A7FE99600721117 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD61D2A7FE99600721117 /* Encodable+Extension.swift */; };
+		C3DFD62E2A89158700721117 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD62D2A89158700721117 /* MainView.swift */; };
+		C3DFD6302A89160700721117 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD62F2A89160700721117 /* LoginResponseModel.swift */; };
+		C3DFD6322A89161000721117 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD6312A89161000721117 /* LoginRequestModel.swift */; };
+		C3DFD6352A8918C700721117 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = C3DFD6342A8918C700721117 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +75,9 @@
 		C3DFD5E12A7FD30500721117 /* RestServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestServices.swift; sourceTree = "<group>"; };
 		C3DFD5E22A7FD30500721117 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		C3DFD61D2A7FE99600721117 /* Encodable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		C3DFD62D2A89158700721117 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C3DFD62F2A89160700721117 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		C3DFD6312A89161000721117 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DFD61C2A7FD39700721117 /* Alamofire in Frameworks */,
+				C3DFD6352A8918C700721117 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +181,7 @@
 		C3DFD5782A7E907E00721117 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C3DFD62C2A89157F00721117 /* Main */,
 				C3DFD5932A7FC04700721117 /* Authentication */,
 			);
 			path = View;
@@ -276,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				C3DFD5B62A7FD30500721117 /* RegisterUserResponseModel.swift */,
+				C3DFD62F2A89160700721117 /* LoginResponseModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -301,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				C3DFD5DE2A7FD30500721117 /* RegisterUserRequestModel.swift */,
+				C3DFD6312A89161000721117 /* LoginRequestModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -312,6 +323,14 @@
 				C3DFD5E22A7FD30500721117 /* EndPoints.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C3DFD62C2A89157F00721117 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3DFD62D2A89158700721117 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +351,7 @@
 			name = ShareTodo;
 			packageProductDependencies = (
 				C3DFD61B2A7FD39700721117 /* Alamofire */,
+				C3DFD6342A8918C700721117 /* AlertToast */,
 			);
 			productName = ShareTodo;
 			productReference = C3DFD55B2A7E902D00721117 /* ShareTodo.app */;
@@ -363,6 +383,7 @@
 			mainGroup = C3DFD5522A7E902D00721117;
 			packageReferences = (
 				C3DFD61A2A7FD39700721117 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C3DFD6332A8918C700721117 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			productRefGroup = C3DFD55C2A7E902D00721117 /* Products */;
 			projectDirPath = "";
@@ -394,11 +415,13 @@
 				C3DFD5822A7E988500721117 /* CustomTextFieldConfig.swift in Sources */,
 				C3DFD5902A7FBC7D00721117 /* CustomToggle.swift in Sources */,
 				C3DFD5E32A7FD30500721117 /* BaseNetworking.swift in Sources */,
+				C3DFD6322A89161000721117 /* LoginRequestModel.swift in Sources */,
 				C3DFD57C2A7E911700721117 /* CustomNavigationController.swift in Sources */,
 				C3DFD57A2A7E908A00721117 /* LoginView.swift in Sources */,
 				C3DFD5F42A7FD30500721117 /* RegisterUserResponseModel.swift in Sources */,
 				C3DFD55F2A7E902D00721117 /* AppDelegate.swift in Sources */,
 				C3DFD5892A7FBA0A00721117 /* CustomButton.swift in Sources */,
+				C3DFD6302A89160700721117 /* LoginResponseModel.swift in Sources */,
 				C3DFD58E2A7FBA6600721117 /* Color+Extensions.swift in Sources */,
 				C3DFD5612A7E902D00721117 /* SceneDelegate.swift in Sources */,
 				C3DFD5982A7FC24400721117 /* CustomPicker.swift in Sources */,
@@ -410,6 +433,7 @@
 				C3DFD57F2A7E91F600721117 /* CustomTextField.swift in Sources */,
 				C3DFD61E2A7FE99600721117 /* Encodable+Extension.swift in Sources */,
 				C3DFD5922A7FC04300721117 /* RegisterView.swift in Sources */,
+				C3DFD62E2A89158700721117 /* MainView.swift in Sources */,
 				C3DFD5852A7EA9E600721117 /* LoginViewModel.swift in Sources */,
 				C3DFD60B2A7FD30500721117 /* ErrorResponseModel.swift in Sources */,
 				C3DFD5E42A7FD30500721117 /* API.swift in Sources */,
@@ -636,6 +660,14 @@
 				kind = branch;
 			};
 		};
+		C3DFD6332A8918C700721117 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -643,6 +675,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3DFD61A2A7FD39700721117 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		C3DFD6342A8918C700721117 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3DFD6332A8918C700721117 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

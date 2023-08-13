@@ -20,6 +20,8 @@ final class RegisterViewModel: ObservableObject {
     
     func registerUser(completion: @escaping (Bool) -> Void) {
         isLoading = true
+        print("요청 nickName: ", nickNameText)
+        
         services.registerUser(args: RegisterUserRequestModel(userID: idText, password: passwordText, nickName: nickNameText)) { result, error in
             if result != nil {
                 print("등록 성공")
@@ -31,5 +33,6 @@ final class RegisterViewModel: ObservableObject {
             }
             self.isLoading = false
         }
+        
     }
 }

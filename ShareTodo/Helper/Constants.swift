@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Constants {
+    
+}
+
 enum CustomButtonType {
     case normal
     case clear

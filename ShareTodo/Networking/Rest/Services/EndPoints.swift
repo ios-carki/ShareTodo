@@ -13,6 +13,7 @@ struct EndPoints {
     
     struct Authentication {
         static var register: String { get { return "\(endPointVersion)register"}}
+        static var login: String { get { return "\(endPointVersion)login"}}
     }
     
 }

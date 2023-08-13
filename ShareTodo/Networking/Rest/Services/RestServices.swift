@@ -26,4 +26,21 @@ struct RestServices {
         
         BaseNetworking.shared.request(RegisterUserResponseModel.self, endPoint: event, completion: completion)
     }
+    
+    //MARK: api/login
+    func loginUser(args: LoginRequestModel, completion: @escaping (ResponseWrapper<LoginResponseModel>?, ErrorResponseModel?) -> Void) {
+        guard let params = args.asDictionary() else {
+            completion(nil, ErrorResponseModel(error: true, reason: "args_error"))
+            return
+        }
+        
+        let event = API(
+            path: "\(EndPoints.Authentication.login)",
+            method: .post,
+            headerParamaters: ["Content-Type":"application/json"],
+            bodyParamaters: params
+        )
+        
+        BaseNetworking.shared.request(LoginResponseModel.self, endPoint: event, completion: completion)
+    }
 }

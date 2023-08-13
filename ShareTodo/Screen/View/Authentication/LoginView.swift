@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AlertToast
+
 struct LoginView: View {
     weak var navigation: CustomNavigationController?
     
@@ -39,6 +41,15 @@ struct LoginView: View {
                     CustomButton()
                         .setType(type: .normal)
                         .setTitle(title: "로그인")
+                        .click {
+                            viewModel.loginFunction { result in
+                                if result {
+                                    navigation?.pushViewController(UIHostingController(rootView: MainView(navigation: navigation)), animated: true)
+                                } else {
+                                    viewModel.loginFailToast = true
+                                }
+                            }
+                        }
                 }
                 
                 HStack {
@@ -58,6 +69,13 @@ struct LoginView: View {
                 }
             }
             .padding(.horizontal, 16)
+        }
+        .toast(isPresenting: $viewModel.loginFailToast) {
+            AlertToast(displayMode: .hud, type: .error(.red), title: "로그인 실패")
+        }
+        .onDisappear {
+            viewModel.idText = ""
+            viewModel.passwordText = ""
         }
     }
 }
