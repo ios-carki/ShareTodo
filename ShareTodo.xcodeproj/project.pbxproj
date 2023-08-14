@@ -42,6 +42,10 @@
 		C3DFD6322A89161000721117 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD6312A89161000721117 /* LoginRequestModel.swift */; };
 		C3DFD6352A8918C700721117 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = C3DFD6342A8918C700721117 /* AlertToast */; };
 		C3DFD6372A8920FD00721117 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C3DFD6362A8920FD00721117 /* LICENSE */; };
+		C3DFD6392A8A68EB00721117 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD6382A8A68EB00721117 /* TabBarController.swift */; };
+		C3DFD63D2A8A69BC00721117 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD63C2A8A69BC00721117 /* SettingView.swift */; };
+		C3DFD63F2A8A69C600721117 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD63E2A8A69C600721117 /* ShareView.swift */; };
+		C3DFD6412A8A6A2000721117 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD6402A8A6A2000721117 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +84,10 @@
 		C3DFD62F2A89160700721117 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		C3DFD6312A89161000721117 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 		C3DFD6362A8920FD00721117 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C3DFD6382A8A68EB00721117 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C3DFD63C2A8A69BC00721117 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C3DFD63E2A8A69C600721117 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		C3DFD6402A8A6A2000721117 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,7 @@
 				C3DFD57B2A7E911700721117 /* CustomNavigationController.swift */,
 				C3DFD5812A7E988500721117 /* CustomTextFieldConfig.swift */,
 				C3DFD58A2A7FBA3A00721117 /* Constants.swift */,
+				C3DFD6382A8A68EB00721117 /* TabBarController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -215,6 +224,7 @@
 			children = (
 				C3DFD61D2A7FE99600721117 /* Encodable+Extension.swift */,
 				C3DFD58D2A7FBA6600721117 /* Color+Extensions.swift */,
+				C3DFD6402A8A6A2000721117 /* UIApplication+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,6 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				C3DFD62D2A89158700721117 /* MainView.swift */,
+				C3DFD63C2A8A69BC00721117 /* SettingView.swift */,
+				C3DFD63E2A8A69C600721117 /* ShareView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -419,7 +431,9 @@
 				C3DFD5822A7E988500721117 /* CustomTextFieldConfig.swift in Sources */,
 				C3DFD5902A7FBC7D00721117 /* CustomToggle.swift in Sources */,
 				C3DFD5E32A7FD30500721117 /* BaseNetworking.swift in Sources */,
+				C3DFD6392A8A68EB00721117 /* TabBarController.swift in Sources */,
 				C3DFD6322A89161000721117 /* LoginRequestModel.swift in Sources */,
+				C3DFD63D2A8A69BC00721117 /* SettingView.swift in Sources */,
 				C3DFD57C2A7E911700721117 /* CustomNavigationController.swift in Sources */,
 				C3DFD57A2A7E908A00721117 /* LoginView.swift in Sources */,
 				C3DFD5F42A7FD30500721117 /* RegisterUserResponseModel.swift in Sources */,
@@ -433,11 +447,13 @@
 				C3DFD6182A7FD30500721117 /* RestServices.swift in Sources */,
 				C3DFD59A2A7FD22800721117 /* CustomProgress.swift in Sources */,
 				C3DFD6162A7FD30500721117 /* RegisterUserRequestModel.swift in Sources */,
+				C3DFD6412A8A6A2000721117 /* UIApplication+Extension.swift in Sources */,
 				C3DFD5962A7FC0A400721117 /* RegisterViewModel.swift in Sources */,
 				C3DFD57F2A7E91F600721117 /* CustomTextField.swift in Sources */,
 				C3DFD61E2A7FE99600721117 /* Encodable+Extension.swift in Sources */,
 				C3DFD5922A7FC04300721117 /* RegisterView.swift in Sources */,
 				C3DFD62E2A89158700721117 /* MainView.swift in Sources */,
+				C3DFD63F2A8A69C600721117 /* ShareView.swift in Sources */,
 				C3DFD5852A7EA9E600721117 /* LoginViewModel.swift in Sources */,
 				C3DFD60B2A7FD30500721117 /* ErrorResponseModel.swift in Sources */,
 				C3DFD5E42A7FD30500721117 /* API.swift in Sources */,

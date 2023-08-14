@@ -44,7 +44,9 @@ struct LoginView: View {
                         .click {
                             viewModel.loginFunction { result in
                                 if result {
-                                    navigation?.pushViewController(UIHostingController(rootView: MainView(navigation: navigation)), animated: true)
+                                    withAnimation {
+                                        UIApplication.shared.createTabBar(index: 1)
+                                    }
                                 } else {
                                     viewModel.loginFailToast = true
                                 }
@@ -69,6 +71,10 @@ struct LoginView: View {
                 }
             }
             .padding(.horizontal, 16)
+            
+            if viewModel.isLoading {
+                CustomProgress(isLoading: viewModel.isLoading)
+            }
         }
         .toast(isPresenting: $viewModel.loginFailToast) {
             AlertToast(displayMode: .hud, type: .error(.red), title: "로그인 실패")
