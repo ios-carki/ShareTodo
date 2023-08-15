@@ -26,10 +26,13 @@ final class CustomTextFieldConfig {
     var defaultTextViewBackground: Color = .white
     
     //PlaceHolder
-    var defaultPlaceHolderTextFont: Font = .body
+    var defaultPlaceHolderTextFont: Font = .callout
     var defaultPlaceHolderTextColor: Color = .gray
     
     //Error
     var defaultErrorTextFont: Font = .footnote
     var defaultErrorBorderColor: Color = .red
+    
+    //Secure
+    var defaultSecureButtonColor: Color = .black
 }

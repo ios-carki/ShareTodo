@@ -24,6 +24,7 @@ struct LoginView: View {
                     .setTitleText("ID")
                 
                 CustomTextField(text: $viewModel.passwordText)
+                    .setSecureField(true)
                     .setPlaceHolderText("Password 입력")
                     .setTitleText("Password")
                 
