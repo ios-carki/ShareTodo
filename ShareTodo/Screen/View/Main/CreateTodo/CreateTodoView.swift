@@ -1,26 +1,25 @@
 //
-//  ShareView.swift
+//  CreateTodoView.swift
 //  ShareTodo
 //
-//  Created by Carki on 2023/08/14.
+//  Created by Carki on 2023/08/15.
 //
 
 import SwiftUI
 
-struct ShareView: View {
+struct CreateTodoView: View {
     weak var navigation: CustomNavigationController?
     
     var body: some View {
         ZStack {
             Color.gray.ignoresSafeArea()
-            Text("ShareView")
+            Text("Create Todo View")
         }
-        .navigationTitle("공유")
     }
 }
 
-struct ShareView_Previews: PreviewProvider {
+struct CreateTodoView_Previews: PreviewProvider {
     static var previews: some View {
-        ShareView()
+        CreateTodoView()
     }
 }

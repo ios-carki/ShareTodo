@@ -6,11 +6,19 @@
 //
 
 import Foundation
+import UIKit
 
 final class RegisterViewModel: ObservableObject {
     @Published var idText: String = ""
     @Published var passwordText: String = ""
     @Published var nickNameText: String = ""
+    
+    //Profile Image
+    @Published var presentSetProfile: Bool = false
+    @Published var image: UIImage?
+    @Published var presentGallery = false
+    @Published var presentCamera = false
+    @Published var isCaptured = false
     
     //Loading
     @Published var isLoading: Bool = false

@@ -27,6 +27,8 @@ final class LoginViewModel: ObservableObject {
         
         services.loginUser(args: LoginRequestModel(userID: idText, password: passwordText)) { result, error in
             if result != nil {
+                print(result?.data?.nickName)
+                print(result?.data?.userId)
                 completion(true)
             } else {
                 completion(false)

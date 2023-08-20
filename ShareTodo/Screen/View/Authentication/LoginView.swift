@@ -8,6 +8,7 @@
 import SwiftUI
 
 import AlertToast
+import Cassette
 
 struct LoginView: View {
     weak var navigation: CustomNavigationController?
@@ -32,16 +33,12 @@ struct LoginView: View {
                     .setTitle("자동로그인")
                 
                 HStack(spacing: 12) {
-                    CustomButton()
-                        .setType(type: .normal)
-                        .setTitle(title: "회원가입")
+                    BtnCassette(buttonMode: .normal(text: "회원가입"))
                         .click {
                             navigation?.pushViewController(UIHostingController(rootView: RegisterView(navigation: navigation)), animated: true)
                         }
                     
-                    CustomButton()
-                        .setType(type: .normal)
-                        .setTitle(title: "로그인")
+                    BtnCassette(buttonMode: .normal(text: "로그인"))
                         .click {
                             viewModel.loginFunction { result in
                                 if result {

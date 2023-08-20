@@ -11,7 +11,11 @@ struct SettingView: View {
     weak var navigation: CustomNavigationController?
     
     var body: some View {
-        Text("SettingView")
+        ZStack {
+            Color.gray.ignoresSafeArea()
+            Text("SettingView")
+        }
+        .navigationTitle("설정")
     }
 }
 

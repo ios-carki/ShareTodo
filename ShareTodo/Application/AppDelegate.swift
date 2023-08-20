@@ -7,13 +7,25 @@
 
 import UIKit
 
+import Cassette
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let shared = BtnCassetteConfig.shared
+        shared.defaultButtonTextColor = .black
+        shared.defaultButtonTextFont = .callout
+        shared.defaultButtonCornerRadius = 12
+        shared.defaultBorderWidth = 1
+        shared.defaultBorderColor = .black
+        shared.defaultButtonHeight = 50
+        shared.defaultButtonBackgroundColor = .white
+        shared.defaultbuttonDisableBackgroundColor = .gray
+
+        
         return true
     }
 

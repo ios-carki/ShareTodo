@@ -48,24 +48,36 @@ struct MainView: View {
                                     .frame(width: 100, height: 100)
                                     .foregroundColor(.white)
                             )
+                            .onTapGesture {
+                                navigation?.pushViewController(UIHostingController(rootView: CreateTodoView(navigation: navigation)), animated: true)
+                            }
                     }
 
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("즐찾 게시판")
-                            .frame(maxHeight: .infinity)
+                    GeometryReader { geo in
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("즐찾 게시판")
+                                .frame(maxHeight: .infinity)
 
-                        RoundedRectangle(cornerRadius: 12)
-                            .frame(maxHeight: .infinity)
-                            .foregroundColor(.teal)
-                            .overlay(
-                                VStack {
-                                    ForEach(0..<15, id: \.self) { index in
-                                        Text("asfd")
-                                    }
-
+                            VStack {
+                                ForEach(0..<18, id: \.self) { index in
+                                    Text("asfd")
                                 }
+                            }
+                            .frame(width: geo.size.width - 32) // 왼쪽정렬 .alignment: .leading
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 8)
+                            .background(.teal)
+                            .cornerRadius(12)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .inset(by: 0.5)
+                                    .stroke(Color.yellow)
                             )
+                            
+                        }
                     }
+                    
+                    
                 }
             }
             .padding(.horizontal, 16)

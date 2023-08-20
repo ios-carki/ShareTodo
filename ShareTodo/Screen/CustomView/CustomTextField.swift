@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomTextField: View {
     
     //Title
-    @State var titleText: String?
+    var titleText: String?
     var titleFont: Font = CustomTextFieldConfig.shared.defaultTitleFont
     var titleTextColor: Color = CustomTextFieldConfig.shared.defaultTitleTextColor
     
@@ -239,6 +239,7 @@ struct CustomTextField_Previews: PreviewProvider {
             Color.indigo
             VStack {
                 CustomTextField(text: .constant(""))
+                    .setTitleText("asfdgij")
                     .setPlaceHolderText("asdfg")
                     .setSecureButtonColor(color: .red)
                     .setSecureField(true)

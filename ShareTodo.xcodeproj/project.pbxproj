@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34AF3B92A8BBF6400F3C40E /* CreateTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34AF3B82A8BBF6400F3C40E /* CreateTodoView.swift */; };
+		C34AF3BE2A8F9B2500F3C40E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34AF3BD2A8F9B2500F3C40E /* TestView.swift */; };
+		C34AF3C32A8FA0AA00F3C40E /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34AF3C22A8FA0AA00F3C40E /* TestViewModel.swift */; };
+		C34AF3E62A927B9400F3C40E /* Cassette in Frameworks */ = {isa = PBXBuildFile; productRef = C34AF3E52A927B9400F3C40E /* Cassette */; };
+		C34AF3E82A92875F00F3C40E /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34AF3E72A92875F00F3C40E /* CustomImagePicker.swift */; };
 		C3DFD55F2A7E902D00721117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD55E2A7E902D00721117 /* AppDelegate.swift */; };
 		C3DFD5612A7E902D00721117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFD5602A7E902D00721117 /* SceneDelegate.swift */; };
 		C3DFD5682A7E902F00721117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DFD5672A7E902F00721117 /* Assets.xcassets */; };
@@ -49,6 +54,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34AF3B82A8BBF6400F3C40E /* CreateTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoView.swift; sourceTree = "<group>"; };
+		C34AF3BD2A8F9B2500F3C40E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		C34AF3C22A8FA0AA00F3C40E /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		C34AF3E72A92875F00F3C40E /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
 		C3DFD55B2A7E902D00721117 /* ShareTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DFD55E2A7E902D00721117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3DFD5602A7E902D00721117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,12 +106,21 @@
 			files = (
 				C3DFD61C2A7FD39700721117 /* Alamofire in Frameworks */,
 				C3DFD6352A8918C700721117 /* AlertToast in Frameworks */,
+				C34AF3E62A927B9400F3C40E /* Cassette in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34AF3B72A8BBF5600F3C40E /* CreateTodo */ = {
+			isa = PBXGroup;
+			children = (
+				C34AF3B82A8BBF6400F3C40E /* CreateTodoView.swift */,
+			);
+			path = CreateTodo;
+			sourceTree = "<group>";
+		};
 		C3DFD5522A7E902D00721117 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +213,8 @@
 			children = (
 				C3DFD62C2A89157F00721117 /* Main */,
 				C3DFD5932A7FC04700721117 /* Authentication */,
+				C34AF3BD2A8F9B2500F3C40E /* TestView.swift */,
+				C34AF3C22A8FA0AA00F3C40E /* TestViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +227,7 @@
 				C3DFD58F2A7FBC7D00721117 /* CustomToggle.swift */,
 				C3DFD5972A7FC24400721117 /* CustomPicker.swift */,
 				C3DFD5992A7FD22800721117 /* CustomProgress.swift */,
+				C34AF3E72A92875F00F3C40E /* CustomImagePicker.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -341,6 +362,7 @@
 		C3DFD62C2A89157F00721117 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C34AF3B72A8BBF5600F3C40E /* CreateTodo */,
 				C3DFD62D2A89158700721117 /* MainView.swift */,
 				C3DFD63C2A8A69BC00721117 /* SettingView.swift */,
 				C3DFD63E2A8A69C600721117 /* ShareView.swift */,
@@ -367,6 +389,7 @@
 			packageProductDependencies = (
 				C3DFD61B2A7FD39700721117 /* Alamofire */,
 				C3DFD6342A8918C700721117 /* AlertToast */,
+				C34AF3E52A927B9400F3C40E /* Cassette */,
 			);
 			productName = ShareTodo;
 			productReference = C3DFD55B2A7E902D00721117 /* ShareTodo.app */;
@@ -399,6 +422,7 @@
 			packageReferences = (
 				C3DFD61A2A7FD39700721117 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C3DFD6332A8918C700721117 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				C34AF3E42A927B9400F3C40E /* XCRemoteSwiftPackageReference "Cassette" */,
 			);
 			productRefGroup = C3DFD55C2A7E902D00721117 /* Products */;
 			projectDirPath = "";
@@ -428,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34AF3E82A92875F00F3C40E /* CustomImagePicker.swift in Sources */,
 				C3DFD5822A7E988500721117 /* CustomTextFieldConfig.swift in Sources */,
 				C3DFD5902A7FBC7D00721117 /* CustomToggle.swift in Sources */,
 				C3DFD5E32A7FD30500721117 /* BaseNetworking.swift in Sources */,
@@ -436,6 +461,7 @@
 				C3DFD63D2A8A69BC00721117 /* SettingView.swift in Sources */,
 				C3DFD57C2A7E911700721117 /* CustomNavigationController.swift in Sources */,
 				C3DFD57A2A7E908A00721117 /* LoginView.swift in Sources */,
+				C34AF3B92A8BBF6400F3C40E /* CreateTodoView.swift in Sources */,
 				C3DFD5F42A7FD30500721117 /* RegisterUserResponseModel.swift in Sources */,
 				C3DFD55F2A7E902D00721117 /* AppDelegate.swift in Sources */,
 				C3DFD5892A7FBA0A00721117 /* CustomButton.swift in Sources */,
@@ -448,6 +474,7 @@
 				C3DFD59A2A7FD22800721117 /* CustomProgress.swift in Sources */,
 				C3DFD6162A7FD30500721117 /* RegisterUserRequestModel.swift in Sources */,
 				C3DFD6412A8A6A2000721117 /* UIApplication+Extension.swift in Sources */,
+				C34AF3BE2A8F9B2500F3C40E /* TestView.swift in Sources */,
 				C3DFD5962A7FC0A400721117 /* RegisterViewModel.swift in Sources */,
 				C3DFD57F2A7E91F600721117 /* CustomTextField.swift in Sources */,
 				C3DFD61E2A7FE99600721117 /* Encodable+Extension.swift in Sources */,
@@ -456,6 +483,7 @@
 				C3DFD63F2A8A69C600721117 /* ShareView.swift in Sources */,
 				C3DFD5852A7EA9E600721117 /* LoginViewModel.swift in Sources */,
 				C3DFD60B2A7FD30500721117 /* ErrorResponseModel.swift in Sources */,
+				C34AF3C32A8FA0AA00F3C40E /* TestViewModel.swift in Sources */,
 				C3DFD5E42A7FD30500721117 /* API.swift in Sources */,
 				C3DFD58B2A7FBA3A00721117 /* Constants.swift in Sources */,
 				C3DFD5E52A7FD30500721117 /* AppEnvironment.swift in Sources */,
@@ -672,6 +700,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C34AF3E42A927B9400F3C40E /* XCRemoteSwiftPackageReference "Cassette" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ios-carki/Cassette.git";
+			requirement = {
+				branch = v1.0.4;
+				kind = branch;
+			};
+		};
 		C3DFD61A2A7FD39700721117 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -691,6 +727,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C34AF3E52A927B9400F3C40E /* Cassette */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C34AF3E42A927B9400F3C40E /* XCRemoteSwiftPackageReference "Cassette" */;
+			productName = Cassette;
+		};
 		C3DFD61B2A7FD39700721117 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C3DFD61A2A7FD39700721117 /* XCRemoteSwiftPackageReference "Alamofire" */;
