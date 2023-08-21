@@ -3,9 +3,10 @@
 ![UI](https://img.shields.io/badge/UI-UIKit-red.svg)
 ![Xcode](https://img.shields.io/badge/Xcode-14.2+-green)
 ![Version](https://img.shields.io/badge/iOS-15.0-yellow)
+
 ![Vapor](https://img.shields.io/badge/Vapor_framework-4.77.1-purple)
 ![Vapor](https://img.shields.io/badge/Vapor_toolbox-18.7.1-purple)
-![Beekeeper](https://img.shields.io/badge/Beekeeper-3.9.18-brown)
+![DBeaver](https://img.shields.io/badge/DBeaver-23.1.1-brown)
 ![Docker](https://img.shields.io/badge/Docker-4.21.1-cyan)
 
 
@@ -30,7 +31,7 @@ Swift와 Vapor로 만든 REST-API로 Todo앱 만들기 1인 프로젝트 입니�
 ### DB 
 - Postgres
 ### DB GUI
-- Beekeeper Studio
+- DBeaver
 
 ---
 
